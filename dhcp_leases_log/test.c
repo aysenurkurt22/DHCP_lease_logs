@@ -55,7 +55,7 @@ int main() {
            
             if (strcmp(token, "lease") == 0) {
                 item = &leases[leaseCount];
-                token=explode(" ",satir,2);
+                token=strtok(NULL," ");
                 strcpy(item->IPAddress, token);
             }
             else if (strcmp(token, "starts") == 0) {
